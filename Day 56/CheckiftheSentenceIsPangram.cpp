@@ -8,3 +8,14 @@ public:
         return false;
     }
 };
+
+// USING SET
+class Solution {
+public:
+    bool checkIfPangram(string sentence) {
+        set<char> st;
+        for(auto c: sentence) st.insert(c);
+        if(st.size()==26) return true;
+        return false;
+    }
+};
